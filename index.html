@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word to Markdown Converter</title>
+    
+    <!-- Google Fonts for premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Client-side Document Processing Library (Mammoth.js) -->
+    <script src="https://unpkg.com/mammoth@1.4.21/mammoth.browser.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- Background Animations -->
+        <div class="background-blobs">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+
+        <main class="container">
+            <header class="text-center">
+                <h1 class="gradient-text">Word to Markdown</h1>
+                <p class="subtitle">Convert Word (.docx) to beautiful, structured Markdown instantly. <br/>100% private. Runs entirely in your browser.</p>
+            </header>
+
+            <!-- Upload Section -->
+            <section id="upload-section" class="glass-card main-card active">
+                <div class="drop-zone" id="drop-zone">
+                    <div class="drop-zone-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="12" y1="18" x2="12" y2="12"></line>
+                            <polyline points="9 15 12 12 15 15"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Drag & Drop your .docx file here</h3>
+                    <p>or click to browse your files</p>
+                    <input type="file" id="file-input" accept=".docx" hidden>
+                </div>
+                
+                <div id="loading-state" class="loading-state hidden">
+                    <div class="spinner"></div>
+                    <p>Extracting text and converting to Markdown...</p>
+                </div>
+                <div id="error-message" class="error-msg"></div>
+            </section>
+
+            <!-- Result Section -->
+            <section id="result-section" class="glass-card result-card hidden">
+                <div class="result-header">
+                    <h2>Conversion Successful! ✨</h2>
+                    <p class="file-name-display" id="file-name-display">document.docx</p>
+                </div>
+                
+                <div class="preview-container">
+                    <div class="preview-header">
+                        <span>Markdown Preview</span>
+                        <button id="copy-btn" class="icon-btn" title="Copy to clipboard">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                    </div>
+                    <textarea id="markdown-preview" readonly spellcheck="false"></textarea>
+                </div>
+
+                <div class="action-buttons">
+                    <button id="start-over-btn" class="secondary-btn">Start Over</button>
+                    <button id="download-btn" class="primary-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        Download .md
+                    </button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Application Logic -->
+    <script src="app.js"></script>
+</body>
+</html>
