@@ -15,6 +15,9 @@
 
     <!-- Client-side Document Processing Library (Mammoth.js) -->
     <script src="https://unpkg.com/mammoth@1.4.21/mammoth.browser.min.js"></script>
+
+    <!-- Google AdSense Placeholder -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_ADSENSE_ID" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="app">
@@ -79,6 +82,22 @@
                     </button>
                 </div>
             </section>
+
+            <!-- AdSense Advertisement Block -->
+            <div class="ad-container text-center" style="margin-top: 2rem; min-height: 120px;">
+                <p style="font-size: 0.75rem; margin-bottom: 0.5rem; opacity: 0.5; color: var(--text-muted);">Advertisement</p>
+                <!-- Replace attributes with your actual AdSense Publisher ID and Ad Slot ID -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-YOUR_ADSENSE_ID"
+                     data-ad-slot="YOUR_AD_SLOT_ID"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+
         </main>
     </div>
 
