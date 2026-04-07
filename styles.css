@@ -87,10 +87,32 @@ body {
 }
 
 /* Layout */
+.layout-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.ad-sidebar {
+    display: none;
+    width: 160px;
+    flex-shrink: 0;
+    margin-top: 80px;
+}
+
+@media (min-width: 1100px) {
+    .ad-sidebar {
+        display: block;
+    }
+}
+
 .container {
+    width: 100%;
     max-width: 800px;
     margin: 0 auto;
-    padding: 4rem 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
