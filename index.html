@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#0f1117">
-    
+
     <!-- Primary SEO Meta Tags -->
     <title>Word to Markdown Converter | Fast, Free & Private (.docx to .md)</title>
-    <meta name="title" content="Word to Markdown Converter | Fast, Free & Private (.docx to .md)">
-    <meta name="description" content="Fast, pure, and beautifully simple Word to Markdown converter. Process your .docx files into perfectly formatted .md code completely private and offline in your browser.">
-    <meta name="keywords" content="word to markdown, docx to md, convert word to markdown, word to markdown converter, word to markdown online, free, github">
+    <meta name="title" content="Word to Markdown Converter | (.docx to .md)">
+    <meta name="description"
+        content="Word to Markdown converter. Convert your .docx files into .md code  and offline in your browser.">
+    <meta name="keywords"
+        content="word to markdown, docx to md, convert word to markdown, word to markdown converter, word to markdown online, free, github">
     <meta name="robots" content="index, follow">
-    
+
     <!-- Open Graph / Social Media Sharing -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Word to Markdown Converter | Fast, Free & Private">
-    <meta property="og:description" content="Convert Word docs to structural Markdown instantly. 100% secure client-side browser processing. No uploads required.">
-    
+    <meta property="og:description"
+        content="Convert Word docs to structural Markdown instantly. 100% secure client-side browser processing. No uploads required.">
+
     <!-- Twitter Snippets -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Word to Markdown Converter | Fast, Free & Private">
-    <meta name="twitter:description" content="Convert Word docs to structural Markdown instantly. 100% secure client-side browser processing. No uploads required.">
-    
+    <meta name="twitter:description"
+        content="Convert Word docs to structural Markdown instantly. 100% secure client-side browser processing. No uploads required.">
+
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
@@ -37,12 +42,14 @@
       "description": "A completely free, fully private client-side converter that perfectly turns Word (.docx) documents into clean Markdown code."
     }
     </script>
-    
+
     <!-- Google Fonts for premium typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 
@@ -51,8 +58,10 @@
 
     <!-- Google AdSense -->
     <meta name="google-adsense-account" content="ca-pub-8319038575472127">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8319038575472127" crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8319038575472127"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div id="app">
         <!-- Background Animations -->
@@ -65,113 +74,107 @@
         <!-- Page Header -->
         <header class="text-center" style="padding-top: 4rem; padding-bottom: 1rem; max-width: 800px; margin: 0 auto;">
             <h1 class="gradient-text">Word to Markdown</h1>
-            <p class="subtitle">Convert Word (.docx) to beautiful, structured Markdown instantly. <br/>100% private. Runs entirely in your browser.</p>
+            <p class="subtitle">Convert Word (.docx) to beautiful, structured Markdown instantly. <br />100% private.
+                Runs entirely in your browser.</p>
         </header>
 
         <div class="layout-wrapper" style="padding-top: 0;">
             <!-- Left Ad Sidebar -->
-            <aside class="ad-sidebar">
-                <p class="ad-label">Advertisement</p>
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-8319038575472127"
-                     data-ad-slot="YOUR_AD_SLOT_ID"
-                     data-ad-format="vertical"
-                     data-full-width-responsive="true"></ins>
-                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-            </aside>
+
 
             <main class="container">
 
-            <!-- Upload Section -->
-            <section id="upload-section" class="glass-card main-card active">
-                <div class="drop-zone" id="drop-zone">
-                    <div class="drop-zone-icon">
-                        <svg aria-label="Upload Icon" role="img" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                            <polyline points="14 2 14 8 20 8"></polyline>
-                            <line x1="12" y1="18" x2="12" y2="12"></line>
-                            <polyline points="9 15 12 12 15 15"></polyline>
-                        </svg>
+                <!-- Upload Section -->
+                <section id="upload-section" class="glass-card main-card active">
+                    <div class="drop-zone" id="drop-zone">
+                        <div class="drop-zone-icon">
+                            <svg aria-label="Upload Icon" role="img" xmlns="http://www.w3.org/2000/svg" width="48"
+                                height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="12" y1="18" x2="12" y2="12"></line>
+                                <polyline points="9 15 12 12 15 15"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Drag & Drop your .docx file here</h3>
+                        <p>or click to browse your files</p>
+                        <input type="file" id="file-input" accept=".docx" hidden>
                     </div>
-                    <h3>Drag & Drop your .docx file here</h3>
-                    <p>or click to browse your files</p>
-                    <input type="file" id="file-input" accept=".docx" hidden>
-                </div>
-                
-                <div id="loading-state" class="loading-state hidden">
-                    <div class="spinner"></div>
-                    <p>Extracting text and converting to Markdown...</p>
-                </div>
-                <div id="error-message" class="error-msg"></div>
-            </section>
 
-            <!-- Result Section -->
-            <section id="result-section" class="glass-card result-card hidden">
-                <div class="result-header">
-                    <h2>Conversion Successful! ✨</h2>
-                    <p class="file-name-display" id="file-name-display">document.docx</p>
-                </div>
-                
-                <div class="preview-container">
-                    <div class="preview-header">
-                        <span>Markdown Preview</span>
-                        <button id="copy-btn" class="icon-btn" title="Copy to clipboard">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                    <div id="loading-state" class="loading-state hidden">
+                        <div class="spinner"></div>
+                        <p>Extracting text and converting to Markdown...</p>
+                    </div>
+                    <div id="error-message" class="error-msg"></div>
+                </section>
+
+                <!-- Result Section -->
+                <section id="result-section" class="glass-card result-card hidden">
+                    <div class="result-header">
+                        <h2>Conversion Successful! ✨</h2>
+                        <p class="file-name-display" id="file-name-display">document.docx</p>
+                    </div>
+
+                    <div class="preview-container">
+                        <div class="preview-header">
+                            <span>Markdown Preview</span>
+                            <button id="copy-btn" class="icon-btn" title="Copy to clipboard">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <textarea id="markdown-preview" readonly spellcheck="false"></textarea>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button id="start-over-btn" class="secondary-btn">Start Over</button>
+                        <button id="download-btn" class="primary-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Download .md
                         </button>
                     </div>
-                    <textarea id="markdown-preview" readonly spellcheck="false"></textarea>
-                </div>
+                </section>
 
-                <div class="action-buttons">
-                    <button id="start-over-btn" class="secondary-btn">Start Over</button>
-                    <button id="download-btn" class="primary-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                        Download .md
-                    </button>
-                </div>
-            </section>
-            
-            <!-- SEO Text Section for Web Crawlers -->
-            <section class="glass-card" style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
-                <h2 style="font-family: var(--font-heading); color: var(--text-main); font-size: 1.5rem; margin-bottom: 0.5rem;">Why convert Word to Markdown?</h2>
-                <p style="margin-bottom: 1.5rem;">Markdown is the standard for GitHub, web documentation, and modern text editing. Converting complex Microsoft Word (.docx) documents manually can take hours. Doc2MD automates this process instantly, ensuring lists, headers, and formatting remain structurally perfect.</p>
-                
-                <h3 style="font-family: var(--font-heading); color: var(--text-main); font-size: 1.25rem; margin-bottom: 0.5rem;">100% Private & Secure Processing</h3>
-                <p>Unlike other converters that require you to upload sensitive documents to a server, this tool utilizes your browser's own memory. Your files never leave your computer, ensuring absolute data privacy and zero upload waiting times.</p>
-            </section>
+                <!-- SEO Text Section for Web Crawlers -->
+                <section class="glass-card" style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+                    <h2
+                        style="font-family: var(--font-heading); color: var(--text-main); font-size: 1.5rem; margin-bottom: 0.5rem;">
+                        Why convert Word to Markdown?</h2>
+                    <p style="margin-bottom: 1.5rem;">Markdown is the standard for GitHub, web documentation, and modern
+                        text editing. Converting complex Microsoft Word (.docx) documents manually can take hours.
+                        Doc2MD automates this process instantly, ensuring lists, headers, and formatting remain
+                        structurally perfect.</p>
 
-            <!-- AdSense Advertisement Block (Bottom) -->
-            <div class="ad-container text-center" style="margin-top: 2rem; min-height: 120px;">
-                <p class="ad-label">Advertisement</p>
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-8319038575472127"
-                     data-ad-slot="YOUR_AD_SLOT_ID"
-                     data-ad-format="auto"
-                     data-full-width-responsive="true"></ins>
-                <script>
-                     (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </div>
+                    <h3
+                        style="font-family: var(--font-heading); color: var(--text-main); font-size: 1.25rem; margin-bottom: 0.5rem;">
+                        100% Private & Secure Processing</h3>
+                    <p>Unlike other converters that require you to upload sensitive documents to a server, this tool
+                        utilizes your browser's own memory. Your files never leave your computer, ensuring absolute data
+                        privacy and zero upload waiting times.</p>
+                </section>
+
+                <!-- AdSense Advertisement Block (Bottom) -->
 
             </main>
 
             <!-- Right Ad Sidebar -->
-            <aside class="ad-sidebar">
-                <p class="ad-label">Advertisement</p>
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-8319038575472127"
-                     data-ad-slot="YOUR_AD_SLOT_ID"
-                     data-ad-format="vertical"
-                     data-full-width-responsive="true"></ins>
-                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-            </aside>
+
         </div>
     </div>
 
     <!-- Application Logic -->
     <script src="app.js"></script>
 </body>
+
 </html>
